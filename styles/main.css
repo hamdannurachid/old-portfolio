@@ -1,0 +1,308 @@
+body {
+  background: #04ccc3;
+  background: radial-gradient(circle, #04ccc3 28%, #2d8cfd 100%);
+  font-family: 'Assistant', sans-serif;
+  color: #071C4D;
+}
+
+.navbar {
+  overflow-y: hidden !important;
+  top: 0;
+  height: 70px;
+  background: none !important;
+  -webkit-box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  font-family: 'Rubik', sans-serif;
+  background: #fbfaff;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(251, 250, 255, 0.204919)), to(white));
+  background: linear-gradient(90deg, rgba(251, 250, 255, 0.204919) 0%, white 100%);
+}
+
+.navbar .menunav ul li {
+  margin-left: 20px;
+}
+
+.section-home {
+  width: 100%;
+  min-height: 540px;
+  position: relative;
+  padding: 170px 0 120px 0;
+  padding-top: 170px;
+}
+
+.section-home .section-home-right {
+  width: 50%;
+  float: left;
+}
+
+.section-home .section-home-right h2 {
+  font-size: 36px;
+  color: wheat;
+  font-weight: 700;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.section-home .section-home-right p {
+  font-size: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.section-home .section-home-right .sosmed a {
+  margin-right: 15px;
+  color: wheat;
+  font-size: 22px;
+}
+
+.section-home .section-home-right .get-started {
+  background-color: yellow;
+  margin-top: 100px;
+  border-radius: 30px;
+}
+
+.section-home .section-home-right .get-started:hover {
+  background-color: #74b5fc;
+}
+
+.section-home .section-home-left img {
+  width: 50%;
+  float: right;
+}
+
+.section-about-heading {
+  position: relative;
+  padding: 60px 0 0 0;
+}
+
+#about {
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(28%, white), to(rgba(45, 140, 253, 0.01)));
+  background: linear-gradient(0deg, white 28%, rgba(45, 140, 253, 0.01) 100%);
+}
+
+.section-about {
+  margin-top: 70px;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.section-about .about-table th {
+  border: none;
+}
+
+.section-about .about-table tr td {
+  border: none;
+}
+
+.section-about .about-left img {
+  width: 80%;
+  padding-top: 40px;
+}
+
+.section-about .about-right {
+  color: #74b5fc;
+  float: right;
+}
+
+.section-about .about-right p {
+  padding-top: 20px;
+}
+
+#skill {
+  background: #2e5851;
+  background: -webkit-gradient(linear, left top, right top, color-stop(28%, #2e5851), to(#07356c));
+  background: linear-gradient(90deg, #2e5851 28%, #07356c 100%);
+}
+
+.section-skill-head {
+  position: relative;
+  padding: 60px 0 0 0;
+  color: white;
+}
+
+.section-skill h2 {
+  padding-top: 50px;
+}
+
+.section-skill .skill-table th {
+  border: none;
+  width: 10%;
+}
+
+.section-skill .skill-table tr {
+  border: none;
+}
+
+.section-skill .skill-table td {
+  border: none;
+  width: 90% !important;
+}
+
+.section-skill .progress {
+  position: relative;
+  height: 18px;
+  margin-bottom: 25px;
+}
+
+.section-skill .progress .progress-type {
+  position: absolute;
+  left: 0px;
+  font-weight: 800;
+  padding-left: 8px;
+  color: white;
+  background-color: rgba(25, 25, 25, 0.2);
+}
+
+.section-skill .progress .progress-completed {
+  position: absolute;
+  right: 0px;
+  font-weight: 800;
+  padding-right: 8px;
+}
+
+.section-skill .soft .circle {
+  width: 200px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.section-skill .soft .circle canvas {
+  vertical-align: top;
+  width: 80px !important;
+}
+
+.section-skill .soft .circle strong {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  color: black;
+}
+
+.section-skill .soft .circle strong i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+.section-skill .soft .circle span {
+  display: block;
+  color: #aaa;
+  margin-top: 12px;
+}
+
+.section-skill .soft .circle {
+  width: 200px;
+  margin: 6px 6px 20px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.section-skill .soft .circle canvas {
+  vertical-align: top;
+  width: 100px !important;
+}
+
+.section-skill .soft .circle strong {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  color: black;
+}
+
+.section-skill .soft .circle strong i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+.section-skill .soft .circle span {
+  display: block;
+  color: #aaa;
+  margin-top: 12px;
+}
+
+.section-education-head {
+  position: relative;
+  padding: 60px 0 0 0;
+}
+
+.section-education-content {
+  padding-bottom: 20px;
+}
+
+.section-education-content .card {
+  width: 30rem;
+  margin-bottom: 10px;
+  background-color: #07356c;
+}
+
+.section-portfolio-head {
+  position: relative;
+  padding: 60px 0 0 0;
+}
+
+.section-content-portfolio .gallery-item {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.section-content-portfolio .gallery-item:first-child {
+  margin-right: 2.762430939%;
+}
+
+.section-content-portfolio .gallery-item img {
+  width: 100%;
+}
+
+.section-content-portfolio .gallery-item:hover .img-title {
+  /*opacity: 1;*/
+}
+
+.section-content-portfolio .img-title {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  /*opacity: 0;*/
+  display: none;
+  /* comment this out for CSS hover */
+  background-color: #333;
+  /*transition: all 0.5s ease;*/
+}
+
+.section-content-portfolio .img-title h5 {
+  position: absolute;
+  color: #fff;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+.section-content-portfolio .img-title button {
+  position: relative;
+  color: wheat;
+  top: 50%;
+}
+
+.section-content-portfolio {
+  background-color: #04ccc3;
+}
+
+.head-title {
+  padding-top: 60px;
+}
+/*# sourceMappingURL=main.css.map */
