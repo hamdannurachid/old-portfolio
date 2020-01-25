@@ -515,7 +515,9 @@ background: linear-gradient(138deg, rgba(238,238,238,1) 0%, rgba(1,200,217,0.115
         
         .circle canvas {
             vertical-align: top;
-            width: 100px !important;
+            max-width: 100px !important;
+            height: 100px !important;
+            // width: 100px !important;
             // background-color: indigo;
         }
         

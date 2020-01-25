@@ -478,7 +478,8 @@ h6 {
 
 #skill .soft .circle canvas {
   vertical-align: top;
-  width: 100px !important;
+  max-width: 100px !important;
+  height: 100px !important;
 }
 
 #skill .soft .circle strong {
