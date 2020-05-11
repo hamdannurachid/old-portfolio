@@ -1,6 +1,11 @@
+@font-face {
+  font-family: 'MyCambria';
+  src: url('Cambria.ttf')  format('truetype');
+}
+
 body {
   background: #ffffff;
-  font-family: font-family: Cambria, Georgia, serif;
+  font-family: Cambria, 'MyCambria', serif;
 }
 
 .container-fluid.scrolled {
