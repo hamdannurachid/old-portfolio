@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'MyCambria';
+    src: url('Cambria.ttf')  format('truetype');
+  }
+
 body {
+    // background: darkblue;
     background: #ffffff;
-    font-family: "Cambria";
+    font-family: Cambria, 'MyCambria', serif;
+
   }
 
   .container-fluid.scrolled {
@@ -11,13 +18,18 @@ body {
 
   .navbar {
       background-color: transparent;
+    // background-color: red;
       font-family:"Tw Cen MT", "Cambria";
-      
+    //   width: 100%;
+    //   overflow: hidden;
+
   }
 
   @media (max-width: 767px) {
     .navbar {
-        background-color: #21A5AF;
+        // background-color: #21A5AF;
+        // overflow-y: hidden;
+        
     }
 }
 
@@ -195,13 +207,14 @@ body {
             opacity: 0.7;
             width: 150px;
             min-height: 50px;
-            margin-left: 170px;
+            // margin-left: 170px;
             margin-top: 0px;
-            padding-right: -100px;
+            // padding-right: -100px;
             border-top-right-radius: 20px;
             border-bottom-left-radius: 5px;
             position: absolute;
             top: 0;
+            right: 0;
 
             h5 {
                 color: #FFFFFF;
@@ -278,6 +291,7 @@ body {
     background-color: #21A5AF;
     height: 50px;
     color: #FFFFFF;
+    font-size: 14px;
 }
 
 

@@ -19,6 +19,9 @@
 }
 
 @media (max-width: 767px) {
+  .navbar {
+    background-color: #21A5AF !important;
+  }
   .section-header {
     padding: 200px 0 480px;
   }
@@ -33,6 +36,10 @@
 }
 
 @media (max-width: 574px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
   .section-header {
     padding: 200px 10 10px;
   }
