@@ -1,0 +1,94 @@
+@media (max-width: 991px) {
+
+  }
+  
+  @media (max-width: 767px) {
+      body {
+        //   background-color: black;
+      }
+    .section-left {
+        background: none !important;
+        height: 0px !important;
+        // display: none;
+        z-index: 100;
+        position: relative;
+
+        .annoc {
+            // background: #00035E;
+            // background: none !important;
+            // background: url(../images/info.png) center center no-repeat;
+            height: 140px;
+            margin-top: 80px !important;
+        
+            max-width: 90%;
+            margin: 0 auto;
+            
+            
+        }
+        .box {
+            max-width: 80vw !important;
+            // height: 70vh !important;
+            // margin: 5px;
+            text-align: center;
+            position: relative;
+            background: #F1F1F1;
+            border-radius: 10px;
+            padding: 12px !important;
+
+            // max-width: 400px;
+        height: auto !important;
+            // border-radius: 20px;
+            // -webkit-box-shadow: 10px -2px 19px -2px rgba(230,230,230,1);
+            // -moz-box-shadow: 10px -2px 19px -2px rgba(230,230,230,1);
+            // box-shadow: 10px -2px 19px -2px rgba(230,230,230,1);
+
+            h4 {
+                font-size: 14px;
+                color: #00035E;
+                
+            }
+            p {
+                font-size: 11px;
+                margin-top: -20px;
+                line-height: 1.3;
+                color: #00035E;
+            }
+            a {
+                font-size: 11px;
+            }
+    
+            i .fa {
+                font-size: 2px;
+            }
+          }
+        }
+
+    .section-right {
+        margin: 0 auto;
+        height: 100% !important;
+        position: relative;
+        z-index: 10;
+
+        .card {
+            padding-top: -100px !important;
+            // background-color: yellow;
+
+            img {
+                padding-bottom: 150px;
+            }
+
+            h4 {
+                padding-bottom: 10px  !important;
+            }
+        }
+    }
+  }
+
+  @media (max-width: 574px) {
+    // .section-left {
+    //     background: none;
+    //     background-size: cover;
+    //     height: 100vh;
+    // }
+
+  }

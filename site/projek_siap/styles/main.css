@@ -1,0 +1,100 @@
+body, html {
+  overflow-x: hidden;
+}
+
+@media (min-width: 992px) {
+  .login-container {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.section-left {
+  background: url("../images/bg-1.png") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.section-left .annoc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* establish flex container */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* make main axis vertical */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* center items vertically, in this case */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* center items horizontally, in this case */
+  height: 100vh;
+  background: url(../images/box.png) center center no-repeat;
+  background-size: auto;
+}
+
+.section-left .annoc .box {
+  width: 450px;
+  height: 70%;
+  margin: 5px;
+  text-align: center;
+}
+
+.section-left .annoc .box h4 {
+  padding-bottom: 20px;
+}
+
+.section-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* establish flex container */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* make main axis vertical */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* center items vertically, in this case */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-right .card {
+  border: none !important;
+}
+
+.section-right img {
+  width: 70%;
+  max-width: 400px;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.section-right h4 {
+  color: #00035E;
+}
+
+.section-right .btn-login {
+  background-color: #00035E;
+  color: #ffffff;
+}
+
+.section-right a {
+  color: #707070;
+  font-size: small;
+}
+
+.section-right a:hover {
+  text-decoration: underline;
+  color: #00035E;
+}
+/*# sourceMappingURL=main.css.map */
