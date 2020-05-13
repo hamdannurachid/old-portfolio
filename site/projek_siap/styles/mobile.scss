@@ -2,9 +2,7 @@
 }
 
 @media (max-width: 767px) {
-    body {
-        //   background-color: black;
-    }
+   
     .section-left {
         background: none !important;
         height: 0px !important;
@@ -14,7 +12,7 @@
         
         .annoc {
             // background: #00035E;
-            // background: none !important;
+            background: transparent !important;
             // background: url(../images/info.png) center center no-repeat;
             height: 140px;
             margin-top: 80px !important;

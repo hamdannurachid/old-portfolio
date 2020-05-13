@@ -6,6 +6,7 @@
     position: relative;
   }
   .section-left .annoc {
+    background: transparent !important;
     height: 140px;
     margin-top: 80px !important;
     max-width: 90%;
