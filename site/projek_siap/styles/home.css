@@ -1,141 +1,6 @@
-body, html {
-  overflow-x: hidden;
+body {
   font-family: 'Raleway', sans-serif;
-}
-
-@media (min-width: 992px) {
-  .login-container {
-    width: 100vw;
-    height: 100vh;
-  }
-}
-
-.section-left {
-  background: url("../images/bg-1.png") center center no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-
-.section-left .annoc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* establish flex container */
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  /* make main axis vertical */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /* center items vertically, in this case */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* center items horizontally, in this case */
-  height: 100vh;
-  background: url(../images/box.png) center center no-repeat;
-  background-size: auto;
-}
-
-.section-left .annoc .box {
-  width: 450px;
-  height: 70%;
-  margin: 5px;
-  text-align: center;
-}
-
-.section-left .annoc .box h4 {
-  padding-bottom: 20px;
-  font-family: 'Raleway', sans-serif;
-}
-
-.section-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* establish flex container */
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  /* make main axis vertical */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /* center items vertically, in this case */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.section-right .card {
-  background-color: transparent !important;
-  border: none !important;
-}
-
-.section-right img {
-  width: 70%;
-  max-width: 400px;
-  height: auto;
-  padding-bottom: 30px;
-}
-
-.section-right h4 {
-  color: #00035E;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.section-right a.btn-login {
-  background-color: #000478;
-  color: #ffffff;
-}
-
-.section-right a.btn-login:hover {
-  color: #ffffff;
-  background-color: #00035E;
-}
-
-.section-right a {
-  color: #707070;
-  font-size: small;
-  font-weight: bold;
-}
-
-.section-right a:hover {
-  text-decoration: underline;
-  color: #00035E;
-}
-
-#navbar {
-  z-index: 1;
-}
-
-#navbar .navbar {
-  background-color: #ffffff !important;
-  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-}
-
-#navbar .navbar .navbar-brand img {
-  width: 200px;
-}
-
-#navbar .navbar a {
-  color: #00035E;
-  font-size: 15px;
-}
-
-#navbar .navbar .ava img {
-  width: 50px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+  letter-spacing: 0.1px;
 }
 
 .section-top {
@@ -150,14 +15,12 @@ body, html {
 
 .section-top a {
   color: #ffffff;
-  font-size: 12px;
   padding-right: 15px;
   padding-left: 15px;
 }
 
 main {
   background-color: #F9F8FD;
-  padding-bottom: 250px;
 }
 
 .navmenu .breadcrumb {
@@ -166,7 +29,6 @@ main {
 }
 
 .informasi {
-  margin-top: -30px;
   color: #ffffff;
 }
 
@@ -341,17 +203,4 @@ main {
 .studi .img-printer:hover {
   width: 20px;
 }
-
-footer .copy {
-  font-size: 12px;
-  text-align: center;
-  color: #00035E;
-}
-
-footer .infoo {
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  color: #00035E;
-}
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=home.css.map */

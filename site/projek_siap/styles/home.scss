@@ -1,161 +1,21 @@
-body, html { 
-    overflow-x:hidden; 
+
+// Home 
+body {
     font-family: 'Raleway', sans-serif;  
+    letter-spacing: 0.1px;
 }
-
-@media (min-width: 992px) {
-    .login-container {
-        //   background: red;
-        width: 100vw;
-        height: 100vh;
-    }
-}
-
-// Login Page 
-
-.section-left {
-    background: url("../images/bg-1.png") center center no-repeat;
-    background-size: cover;
-    height: 100vh;
-    
-    .annoc {
-        display: flex;           /* establish flex container */
-        flex-direction: column;  /* make main axis vertical */
-        justify-content: center; /* center items vertically, in this case */
-        align-items: center;     /* center items horizontally, in this case */
-        // height: 300px;
-        height: 100vh;
-        background: url(../images/box.png) center center no-repeat;
-        background-size: auto;
-        
-        .box {
-            
-            width: 450px;
-            height: 70%;
-            margin: 5px;
-            text-align: center;
-            // background-color: red;
-            // border-radius: 20px;
-            // -webkit-box-shadow: 10px -2px 19px -2px rgba(230,230,230,1);
-            // -moz-box-shadow: 10px -2px 19px -2px rgba(230,230,230,1);
-            // box-shadow: 10px -2px 19px -2px rgba(230,230,230,1);
-            
-            h4 {
-                padding-bottom: 20px;
-                font-family: 'Raleway', sans-serif;  
-            }
-        }
-    }
-    
-}
-
-.section-right {
-    display: flex;           /* establish flex container */
-    flex-direction: column;  /* make main axis vertical */
-    justify-content: center; /* center items vertically, in this case */
-    align-items: center; 
-    
-    .card {
-        background-color: transparent !important;
-        border: none !important;
-    }
-    
-    img {
-        width: 70%;
-        max-width: 400px;
-        height: auto;
-        padding-bottom: 30px;
-    }
-    
-    h4 {
-        color: #00035E;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    
-    a.btn-login {
-        background-color: #000478;
-        color: #ffffff;
-        
-        &:hover {
-            color: #ffffff;
-            background-color: #00035E;
-        }
-    }
-    
-    a {
-        color: #707070;
-        font-size: small;
-        font-weight: bold;
-
-        &:hover {
-            text-decoration: underline;
-            color: #00035E;
-        }
-    }
-}
-
-// Home Page 
-
-
-#navbar {
-    // background-color: red;
-    // overflow: hidden;
-    z-index: 1;
-    
-    // height: 70px;
-    .navbar {
-        // background-color: red;
-        // height: 00px;
-        // z-index: 100;
-        
-        background-color: #ffffff !important;
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-        .navbar-brand {
-            img {
-                width: 200px;
-            }
-        }
-
-       
-
-        a {
-            color: #00035E;
-            font-size: 15px;
-        }
-        
-        .ava img {
-            width: 50px;
-        }
-    }
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-}
-
-.sticky + .content {
-    // padding-top: 60px;
-    // z-index: 1;
-}
-
-
 .section-top {
     background-color: #00035E;
     color: #ffffff;
     // margin-bottom: 10px;
     font-size: 14px;
-    
+
     .menu {
         height: 30px;
     }
-    
+
     a {
         color: #ffffff;
-        font-size: 12px;
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -165,8 +25,6 @@ body, html {
 
 main {
     background-color: #F9F8FD;
-
-    padding-bottom: 250px;
 }
 
 .navmenu {
@@ -177,7 +35,7 @@ main {
     }
 }
 .informasi {
-    margin-top: -30px;
+
     color: #ffffff;
     h1 {
         font-size: 24px;
@@ -196,7 +54,7 @@ main {
     .card {
         height: 80px;
         border-radius: 7px;
-        
+
     }
     .prodi {
         background: linear-gradient(#11ae95 0%, #8cc541 100%);
@@ -219,31 +77,31 @@ main {
         border: none;
         color: #ffffff;
     }
-    
+
     .activity-content {
         height:230px;
     }
-    
+
     .menuna {
         margin-top: -60px;
-        
+
         img {
             width: 30px;
         }
-        
+
         a {
             text-decoration: none;
             color: #00035E;
             font-size: 14px;
             font-weight: bold;
         }
-        
+
         .card-body {
             border-radius: 5px;
             // background-color: red;
             background-color: #ffffff;
             box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-            
+
         }
     }
 }
@@ -253,13 +111,13 @@ main {
         // background-color: red;
         height: 40px;
         border: 0;
-        
+
         .grafik-image {
             width: 25px;
             margin: 0 auto;
             float: left;
         }
-        
+
         .grafik-title {
             margin-left: 10px;
             overflow: hidden;
@@ -279,14 +137,14 @@ main {
         border-radius: 5px 0px;
         background: #14cf8f;
         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-        
-        
+
+
         .time-image {
             width: 20px;
             margin: 0 auto;
             float: left;
         }
-        
+
         .time-title {
             margin-left: 10px;
             overflow: hidden;
@@ -296,12 +154,12 @@ main {
             color: #ffffff;
         }
     }
-    
+
     .section-content {
         border-radius: 0px 0px 5px 5px;
         background: #fff;
         // box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-        
+
         .table-time {
             margin-bottom: 10px;
             color: #00035E;
@@ -317,13 +175,13 @@ main {
         // background-color: red;
         height: 40px;
         border: 0;
-        
+
         .studi-image {
             width: 25px;
             margin: 0 auto;
             float: left;
         }
-        
+
         .studi-title {
             margin-left: 10px;
             overflow: hidden;
@@ -332,38 +190,24 @@ main {
             font-weight: bold;
         }
     }
-    
+
     .section-content {
         
         p {
             color: #00035E;
         }
     }
-    
+
     table {
         font-size: 14px;
     }
-    
+
     .img-printer {
         width: 18px;
-        
-        
+
+
         &:hover {
             width: 20px;
         }
-    }
-}
-
-footer {
-    .copy {
-        font-size: 12px;
-        text-align: center;
-        color: #00035E;
-    }
-    .infoo {
-        font-size: 14px;
-        font-weight: bold;
-        text-align: center;
-        color: #00035E;
     }
 }
