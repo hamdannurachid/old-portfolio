@@ -109,39 +109,35 @@ body, html {
   color: #00035E;
 }
 
-#navbar {
-  z-index: 1;
-}
-
-#navbar .navbar {
+.navbar {
   background-color: #ffffff !important;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-#navbar .navbar .navbar-brand img {
+.navbar .navbar-brand img {
   width: 200px;
 }
 
-#navbar .navbar a {
-  color: #00035E;
+.navbar a {
+  color: #00035E !important;
   font-size: 15px;
 }
 
-#navbar .navbar .ava img {
-  width: 50px;
+.navbar a:hover {
+  color: #4c4e8e !important;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.navbar .ava img {
+  width: 50px;
 }
 
 .section-top {
   background-color: #00035E;
   color: #ffffff;
   font-size: 14px;
+  display: block;
+  width: 100%;
 }
 
 .section-top .menu {
@@ -155,9 +151,11 @@ body, html {
   padding-left: 15px;
 }
 
-main {
+.content {
   background-color: #F9F8FD;
+  margin-top: 80px;
   padding-bottom: 250px;
+  padding-top: 20px;
 }
 
 .navmenu .breadcrumb {
@@ -166,7 +164,6 @@ main {
 }
 
 .informasi {
-  margin-top: -30px;
   color: #ffffff;
 }
 
@@ -340,6 +337,116 @@ main {
 
 .studi .img-printer:hover {
   width: 20px;
+}
+
+.card {
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border: 0px;
+}
+
+.khs .section-title {
+  background-color: #26B286;
+  color: #ffffff;
+}
+
+.khs .section-title .studi-title p {
+  font-weight: bold;
+}
+
+.khs h3 {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.khs p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.khs .features-image {
+  width: 45px;
+  float: left;
+}
+
+.khs .description {
+  float: left;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.dns .section-title {
+  background-color: #F99F04;
+  color: #ffffff;
+}
+
+.dns .section-title .dns-title p {
+  font-weight: bold;
+}
+
+.dns .table-identitas {
+  font-size: 14px;
+}
+
+.dns .table-dns {
+  font-size: 12px;
+}
+
+.row-ipk h5 {
+  color: #00035E;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.row-ipk .pencapaian {
+  color: #ffffff;
+}
+
+.row-ipk .pencapaian h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.row-ipk .pencapaian p {
+  font-weight: lighter;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.row-ipk .pencapaian h1 {
+  font-size: 28px;
+  text-align: right;
+}
+
+.row-ipk .pencapaian .jumlahsks {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d47fcb), to(#a78ed1));
+  background: linear-gradient(#d47fcb 0%, #a78ed1 100%);
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+}
+
+.row-ipk .pencapaian .angmut {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1bd6e3), to(#37b9f4));
+  background: linear-gradient(#1bd6e3 0%, #37b9f4 100%);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.row-ipk .pencapaian .ipks {
+  background: -webkit-gradient(linear, left top, left bottom, from(#11ae95), to(#8cc541));
+  background: linear-gradient(#11ae95 0%, #8cc541 100%);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.row-ipk .pencapaian .per-ip {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0affd8), to(#6cc541));
+  background: linear-gradient(#0affd8 0%, #6cc541 100%);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 footer .copy {
