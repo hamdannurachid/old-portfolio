@@ -3,11 +3,82 @@ body, html {
   font-family: 'Raleway', sans-serif;
 }
 
+#loading {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(https://media2.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif) 50% no-repeat red;
+}
+
 @media (min-width: 992px) {
   .login-container {
     width: 100vw;
     height: 100vh;
   }
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  background: #ebebeb;
+  background: radial-gradient(circle, rgba(235, 235, 235, 0.0760679) 0%, rgba(11, 11, 11, 0.790354) 0%);
+}
+
+#loader .loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 9999;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font: 14px arial;
+}
+
+#loader .spinner-grow {
+  background: #ebebeb;
+  background: radial-gradient(circle, #ebebeb 0%, #ffb800 100%);
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+#myDiv {
+  display: none;
 }
 
 .section-left {
@@ -73,6 +144,8 @@ body, html {
 .section-right .card {
   background-color: transparent !important;
   border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .section-right img {
@@ -331,11 +404,11 @@ body, html {
   font-size: 14px;
 }
 
-.studi .img-printer {
+.img-printer {
   width: 18px;
 }
 
-.studi .img-printer:hover {
+.img-printer:hover {
   width: 20px;
 }
 
@@ -343,6 +416,10 @@ body, html {
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   border: 0px;
+}
+
+.khs .studi, .khs .dns {
+  min-height: 650px;
 }
 
 .khs .section-title {
@@ -364,6 +441,10 @@ body, html {
   margin-bottom: 0;
   font-size: 14px;
   font-weight: lighter;
+}
+
+.khs form, .khs select {
+  font-size: 14px;
 }
 
 .khs .features-image {
@@ -394,10 +475,14 @@ body, html {
   font-size: 12px;
 }
 
+.row-ipk {
+  font-size: 14px;
+}
+
 .row-ipk h5 {
   color: #00035E;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .row-ipk .pencapaian {
@@ -405,13 +490,12 @@ body, html {
 }
 
 .row-ipk .pencapaian h4 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   margin-bottom: 0;
 }
 
 .row-ipk .pencapaian p {
-  font-weight: lighter;
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -447,6 +531,37 @@ body, html {
   background: linear-gradient(#0affd8 0%, #6cc541 100%);
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.p-confirm {
+  font-size: 14px;
+}
+
+.btn-simpan {
+  background-color: #00035E;
+  width: 90px;
+}
+
+.btn-simpan:hover {
+  background-color: #0006B5;
+}
+
+.btn-batal {
+  background-color: #E4E4E4;
+  width: 70px;
+  color: #00035E;
+  border: #fff;
+}
+
+.btn-batal:hover {
+  background-color: #F6F6F6;
+  color: #909098;
+}
+
+.pengumuman {
+  font-size: 14px;
+  color: #00035E;
+  line-height: 1.9;
 }
 
 footer .copy {

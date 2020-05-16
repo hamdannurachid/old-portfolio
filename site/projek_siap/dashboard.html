@@ -8,22 +8,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script> -->
     <link rel="stylesheet" href="libraries/animate/animate.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/mobile.css">
-    
 </head>
-<body>
-    
-    
+<body onload="myFunction()" style="margin:0;">
+    <!-- <div class="preloader-wrapper">
+        <div class="preloader">
+            <img src="https://media2.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif" width="80">
+        </div>
+    </div> -->
+
+    <!-- <div id="loading"></div> -->
+    <div id="loader">
+        <div class="loading">
+            <!-- <img src="images/fav.png" width="80"> -->
+            <div class="d-flex justify-content-center">
+                <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+              </div>
+          </div>
+    </div>
+
     <!-- <header style="width: 100%; height: 200px; background-color: red; display: block;">
         
     </header> -->
+
     
     <!-- Top Info  -->
     <div class="section-top">
@@ -47,7 +63,7 @@
     <!-- Navbar Menu  -->
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" style="transform: translateY(30px);">
         <div class="container">                                 
-            <a class="navbar-brand" href="#home">
+            <a class="navbar-brand" href="dashboard.html">
                 <img src="images/logo.png" alt="" srcset="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,8 +117,7 @@
     </nav>
     
     <!-- Navbar Menu  -->
-    
-    <main class="content">  
+    <main class="content animate-bottom" style="display:none;" id="myDiv">  
         <!-- INFORMASI  -->
         <div class="container">
             <!-- Breadcrumb  -->
@@ -175,7 +190,7 @@
                         <div class="card-body activity-content">
                             <div class="row menuna">
                                 <div class="col-6 text-center">
-                                    <a href="#">
+                                    <a href="nilai_semester.html">
                                         <div class="card-body h-75">
                                             <img src="images/ic_3.png" alt="">
                                             <p class="py-2">Nilai Semester</p>
@@ -183,7 +198,7 @@
                                     </a>
                                 </div>
                                 <div class="col-6 text-center">
-                                    <a href="#">
+                                    <a href="perwalian.html">
                                         <div class="card-body h-75">
                                             <img src="images/ic-list.png" alt="">
                                             <p class="py-2">Perwalian</p>
@@ -191,7 +206,7 @@
                                     </a>
                                 </div>
                                 <div class="col-6 text-center">
-                                    <a href="#">
+                                    <a href="pilih_kelas.html">
                                         <div class="card-body h-75">
                                             <img src="images/ic_6.png" alt="">
                                             <p class="py-2">Pilih Kelas</p>
@@ -199,7 +214,7 @@
                                     </a>
                                 </div>
                                 <div class="col-6 text-center">
-                                    <a href="#">
+                                    <a href="pembayaran.html">
                                         <div class="card-body h-75 nilai">
                                             <img src="images/ic_4.png" alt="">
                                             <p class="py-2">Pembayaran</p>
@@ -333,9 +348,11 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <a href="#" class="d-flex justify-content-center" data-toggle="tooltip" data-placement="left" title="Cetak Kartu">
-                                <img src="images/printer.png" alt="" class="img-printer">
-                            </a>
+                            <div class="mt-auto d-flex justify-content-center">
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Cetak Kartu">
+                                    <img src="images/printer.png" alt="" class="img-printer">
+                                </a>
+                            </div>
                         </div>
                         
                         
@@ -346,8 +363,6 @@
                 
             </div>
         </div>
-        
-        
     </main>
     
     
@@ -366,17 +381,34 @@
             </div>
         </div>
     </footer>
+
     <!-- Footer  -->
-    
-    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <!-- <script src="libraries/jquery/jquery-3.4.1.min.js"></script> -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
     <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
     
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
 
+    
+    <script>
+
+    var myVar;
+        
+        function myFunction() {
+            myVar = setTimeout(showPage, 900);
+        }
+        
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+        
+        // $(window).load(function() { $("#loading").delay(500).fadeOut("slow"); } )
+
+        AOS.init();
         var doc = $(document);
         var navbar = $(".navbar");
         
@@ -392,34 +424,7 @@
             navbar.css("transform", "translateY(" + (top - scroll) + "px)");
             
         });
-
-        // $('[data-toggle="collapse"]').on('click', function() {
-        //     $navMenuCont = $($(this).data('target'));
-        //     $navMenuCont.animate({
-        //         'width': 'toggler'
-        //     }, 350);
-        //     $(".menu-overlay").fadeIn(800);
-            
-        // });
-        // $(".menu-overlay").click(function(event) {
-        //     $(".navbar-collapse").trigger("click");
-        //     $(".menu-overlay").fadeOut(500);
-        // });
-
-
-
-
-        // const menuToggle = document.querySelector('.menu-overlay');
-        // // const nav = document.querySelector('nav ul');
-
-        // menuToggle.addEventListener('click', function () {
-        //     nav.classList.toggle('menu-overlay');
-        // })
-         
-        
-
         
     </script>
-    
 </body>
 </html>

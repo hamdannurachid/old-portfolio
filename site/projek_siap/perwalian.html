@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Infomasi Akademik</title>
+    <link rel="icon" href="images/fav.png" sizes="16x16" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="libraries/animate/animate.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+</head>
+<body>
+    
+    
+    <!-- <header style="width: 100%; height: 200px; background-color: red; display: block;">
+        
+    </header> -->
+    
+    <!-- Top Info  -->
+    <div class="section-top">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="menu row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 py-1">
+                        Senin, 23 Maret, 2020
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 py-1 text-right">
+                        <p><a href="">Diskusi</a>|<a href="">Pertanyaan</a>|<a href="">Help</a></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Info  -->
+    
+    
+    <!-- Navbar Menu  -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" style="transform: translateY(30px);">
+        <div class="container">                                 
+            <a class="navbar-brand" href="dashboard.html">
+                <img src="images/logo.png" alt="" srcset="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>                   
+            
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto mr-3 mt-lg-0">
+                    <li class="nav-item active px-2" style="background-color: #F6F7F9; border-radius: 20px;">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Akademik</a>
+                        <div class="dropdown-menu">
+                            <a href="nilai_semester.html" class="dropdown-item">Nilai Semester</a>
+                            <a href="#" class="dropdown-item">Daftar Nilai Sementara</a>
+                            <a href="#" class="dropdown-item">Poling SAT</a>
+                            <a href="#" class="dropdown-item">Kartu Rencana Studi</a>
+                            <a href="#" class="dropdown-item">Jadwal Kuliah</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Skripsi</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Pengajuan Judul</a>
+                            <a href="#" class="dropdown-item">Pengjuan Sidang</a>
+                            <a href="#" class="dropdown-item">Permohonan Surat</a>
+                            <a href="#" class="dropdown-item">SKPI</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kurikulum</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 my-sm-0 navbar-nav navbar-left" style="display: block;">
+                    <li class="nav-item dropdown ava">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                            <img src="images/ava.png" alt="">
+                        </a>
+                        
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Profil</a>
+                            <a href="#" class="dropdown-item">Ganti Password</a>
+                            <a href="login.html" class="dropdown-item">Logout</a>
+                        </div>
+                    </li>
+                    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Navbar Menu  -->
+    
+    <main class="content">  
+        <!-- INFORMASI  -->
+        <div class="container">
+            <!-- Breadcrumb  -->
+            <div class="row navmenu mx-xs-0 mx-md-0">
+                <div class="col-sm-12 col-md-12-col-lg-12 p-0">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"><span class="fa fa-home" style="color: #C9C9C9;"></span></a></li>
+                            <li class="breadcrumb-item" aria-current="page"><b>Akademik</b></li>
+                            <li class="breadcrumb-item active" aria-current="page"><b>Perwalian</b></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <!-- Breadcrumb  -->
+            
+        </div>
+        <!-- INFORMASI  -->
+        
+        
+        <div class="container mt-4">
+            <div class="row khs">
+                 <!-- Rencana Studi  -->
+                 <div class="col-sm-12 col-md-8 col-lg-8 mb-3">
+                    <div class="card studi" data-aos="fade-up" data-aos-offset="200">
+                        <div class="card-header section-title">
+                            <div class="studi-title">
+                                <p>Daftar Mata Kuliah Boleh Diambil</p>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column section-content">
+
+                            <form>
+                                <div class="form-group row">
+                                  <label for="staticEmail" class="col-sm-4 col-form-label">Tahun Akademik</label>
+                                  <div class="col-sm-8">
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Semester 1 - 2018/2019</option>
+                                        <option>Semester 2 - 2018/2019</option>
+                                        <option>Semester 3 - 2018/2019</option>
+                                        <option>Semester 4 - 2018/2019</option>
+                                        <option>Semester 5 - 2018/2019</option>
+                                      </select>
+                                  </div>
+                                </div>
+                                
+                              </form>
+                            <table class="table table-hover table-md table-responsive-sm mb-3">
+                                <thead>
+                                    <tr style="background-color: #00035E; color: white;">
+                                        <th scope="col">No</th>
+                                        <th scope="col">Kode</th>
+                                        <th scope="col">Mata Kuliah</th>
+                                        <th scope="col">SKS</th>
+                                        <th scope="col">Ambil</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>IF2071</td>
+                                        <td>Skripsi / Tugas Akhir</td>
+                                        <td>6</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>IF2071</td>
+                                        <td>Sidang Informasi Lanjut</td>
+                                        <td>6</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label" for="customCheck2"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>IF2071</td>
+                                        <td>Kalkulus</td>
+                                        <td>6</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                <label class="custom-control-label" for="customCheck3"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+
+
+                            <div class="d-flex align-items-end flex-column bd-highlight mb-3">
+                                <div class="p-2 bd-highlight p-confirm">Pastikan mata kuliah yang diambil sudah benar?</div>
+                                <div class="mt-2 p-2 bd-highlight">
+                                    <a href="" class="btn btn-outline-primary btn-sm btn-batal">Batal</a>
+                                    <a href="" class="btn btn-primary btn-sm btn-simpan">Simpan</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                <!-- Rencana Studi  -->
+
+                <!-- Jadwal Kuliah  -->
+                <div class="col-sm-12 col-md-4 col-lg-4 mb-3">
+                    <div class="card dns" data-aos="fade-up">
+                        <div class="card-header section-title">                           
+                            <div class="dns-title">
+                                <p>Informasi Pengambilan Mata Kuliah</p>
+                            </div>
+                        </div>
+                        <div class="card-body d-flex flex-column section-content">
+                            <div class="pengumuman">
+                                <p>Aturan pengambilan mata kuliah : 
+                                    <br>
+                                    <br>
+                                    1)   silahkan pilih Semua Mata Kuliah yang                  ditawarkan pada semester 1
+                                    <br>
+                                    2)   pastikan telah melakukan pembayaran
+                                    <br>
+                                    3)   Anda dapat mengambil mata kuliah tambahan
+                                    <br>
+                                    4)   Jika terjadi kesalahan mohon laporkan 
+                                    kepada staf prodi
+                                    
+                                    
+                                    
+
+                                </p>
+                            </div>
+
+                            <div class="mt-auto d-flex justify-content-center">
+                                <button type="button" class="btn btn-outline-dark btn-block btn-sm">Lihat Kurikulum</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Jadwal Kuliah  -->
+                
+               
+                
+            </div>
+            </div>
+        </div>
+        
+        
+    </main>
+    
+    
+    <!-- Footer  -->
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-credit py-4">
+                            <p class="copy">Copyright © 2014 Putrasoft. All rights reserved</p>
+                            <p class="infoo">Jika ada masalah dengan data akademik anda, silahkan hubungi Program Studi anda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer  -->
+    
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        var doc = $(document);
+        var navbar = $(".navbar");
+        
+        doc.scroll(function(){
+            
+            var top = 30;
+            var scroll = doc.scrollTop();
+            
+            if (scroll > top) {
+                scroll = top;
+            }
+            
+            navbar.css("transform", "translateY(" + (top - scroll) + "px)");
+            
+        });
+
+        
+    </script>
+    
+</body>
+</html>
