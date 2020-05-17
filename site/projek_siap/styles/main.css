@@ -560,8 +560,71 @@ body, html {
 
 .pengumuman {
   font-size: 14px;
-  color: #00035E;
   line-height: 1.9;
+}
+
+.opsi-kelas .card {
+  border-radius: 10px;
+  background: #f8f8ff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.opsi-kelas h6 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.opsi-kelas label {
+  font-size: 14px;
+}
+
+.greeting {
+  color: #00035E;
+}
+
+.greeting .card-body {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+}
+
+.greeting h1 {
+  font-weight: bold;
+}
+
+.avatar .avatar-title {
+  min-height: 150px;
+  background-color: #E5E6FF;
+}
+
+.avatar .img-profile {
+  margin-top: -150px;
+}
+
+.avatar .img-profile img {
+  width: 200px;
+  height: 200px;
+}
+
+.avatar .descri {
+  padding-top: 30px;
+}
+
+.avatar .descri h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.avatar .descri h6 {
+  font-size: 14px;
+}
+
+.avatar .biodata .section-title {
+  background-color: #8B8FFF;
+  height: 40px;
+  color: #ffffff;
+  font-size: 14px;
 }
 
 footer .copy {

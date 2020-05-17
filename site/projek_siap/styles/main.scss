@@ -596,13 +596,87 @@ background: radial-gradient(circle, rgba(235,235,235,0.0760679271708683) 0%, rgb
 
 .pengumuman {
     font-size: 14px;
-    color: #00035E;
+    // color: #00035E;
     line-height: 1.9;
+    
+}
+
+.opsi-kelas {
+
+    .card {
+        border-radius: 10px;
+        background: #f8f8ff;
+        box-shadow: none;
+        
+    }
+
+    h6 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    label {
+        font-size: 14px;
+    }
 }
 
 
+.greeting {
 
+    // color: #010101;
+    color: #00035E;
 
+    .card-body {
+        background-color: #ffffff;
+        border: none;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-weight: bold;
+    }
+
+    
+}
+
+.avatar {
+    .avatar-title {
+        min-height: 150px;
+        background-color: #E5E6FF;
+    }
+
+    .img-profile {
+        margin-top: -150px;
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    } 
+
+    .descri {
+        padding-top: 30px;
+        h4 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        h6 {
+            font-size: 14px;
+        }
+    }
+
+    .biodata {
+        
+        .section-title {
+            background-color: #8B8FFF;
+            height: 40px;
+            color: #ffffff;
+            font-size: 14px;
+            // font-weight: bold;
+
+            
+        }
+
+    }
+}
 
 
 footer {

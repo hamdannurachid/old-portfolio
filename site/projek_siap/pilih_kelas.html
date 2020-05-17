@@ -110,8 +110,8 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#"><span class="fa fa-home" style="color: #C9C9C9;"></span></a></li>
-                            <li class="breadcrumb-item" aria-current="page"><b>Akademik</b></li>
-                            <li class="breadcrumb-item active" aria-current="page"><b>Perwalian</b></li>
+                            <li class="breadcrumb-item" aria-current="page">Akademik</li>
+                            <li class="breadcrumb-item active" aria-current="page"><b>Pilih Kelas</b></li>
                         </ol>
                     </nav>
                 </div>
@@ -135,80 +135,90 @@
                         <div class="card-body d-flex flex-column section-content">
 
                             <form>
-                                <div class="form-group row">
-                                  <label for="staticEmail" class="col-sm-4 col-form-label">Tahun Akademik</label>
-                                  <div class="col-sm-8">
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>Semester 1 - 2018/2019</option>
-                                        <option>Semester 2 - 2018/2019</option>
-                                        <option>Semester 3 - 2018/2019</option>
-                                        <option>Semester 4 - 2018/2019</option>
-                                        <option>Semester 5 - 2018/2019</option>
-                                      </select>
-                                  </div>
-                                </div>
+                                <fieldset disabled>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-4 col-form-label">Tahun Akademik</label>
+                                        <div class="col-sm-8">
+                                          <select class="form-control" id="exampleFormControlSelect1">
+                                              <option>Semester 1 - 2018/2019</option>
+                                              <option>Semester 2 - 2018/2019</option>
+                                              <option>Semester 3 - 2018/2019</option>
+                                              <option>Semester 4 - 2018/2019</option>
+                                              <option>Semester 5 - 2018/2019</option>
+                                            </select>
+                                        </div>
+                                      </div>
+                                </fieldset>
                                 
                               </form>
-                            <table class="table table-hover table-md table-responsive-sm mb-3">
-                                <thead>
-                                    <tr style="background-color: #00035E; color: white;">
-                                        <th scope="col">No</th>
-                                        <th scope="col">Kode</th>
-                                        <th scope="col">Mata Kuliah</th>
-                                        <th scope="col">SKS</th>
-                                        <th scope="col">Ambil</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>IF2071</td>
-                                        <td>Skripsi / Tugas Akhir</td>
-                                        <td>6</td>
-                                        <td>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                <label class="custom-control-label" for="customCheck1"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>IF2071</td>
-                                        <td>Sidang Informasi Lanjut</td>
-                                        <td>6</td>
-                                        <td>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                                <label class="custom-control-label" for="customCheck2"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>IF2071</td>
-                                        <td>Kalkulus</td>
-                                        <td>6</td>
-                                        <td>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                                <label class="custom-control-label" for="customCheck3"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    
-                                </tbody>
-                            </table>
 
 
-                            <div class="d-flex align-items-end flex-column bd-highlight mb-3">
-                                <div class="p-2 bd-highlight p-confirm">Pastikan mata kuliah yang diambil sudah benar?</div>
-                                <div class="mt-2 p-2 bd-highlight">
-                                    <a href="" class="btn btn-outline-primary btn-sm btn-batal">Batal</a>
-                                    <a class="btn btn-primary btn-sm btn-simpan" id="success" style="color: white;">Simpan</a>
-                                </div>
+                            <div class="opsi-kelas">
+                                <!-- <form action=""> -->
+                                    <div class="card mb-2">
+                                        <div class="form-group card-body">
+                                            <h6>IF1000 | Sistem Informasi | 4 SKS</h6>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio1" name="op1" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio1">A | R1  Rabu | 08:00 - 13:00 | Tersedia 20/40</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="op1" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio2">A | R1  Rabu | 08:00 - 13:00 | Tersedia 20/40</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio3" name="op1" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">A | R1  Rabu | 08:00 - 13:00 | Tersedia 20/40</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-2">
+                                        <div class="card-body">
+                                            <h6>IF1000 | Kalkulus | 4 SKS</h6>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio4" name="mat2" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio4">A | R1  Rabu | 08:00 - 13:00 | Tersedia 20/40</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio5" name="mat2" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio5">A | R1  Rabu | 08:00 - 13:00 | Tersedia 20/40</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio6" name="mat2" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio6">A | R1  Rabu | 08:00 - 13:00 | Tersedia 20/40</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-2">
+                                        <div class="card-body">
+                                            <h6>IF1000 | Matematika Diskrit | 4 SKS</h6>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio7" name="mat3" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio7">A | R1  Rabu | 08:00 - 13:00 | Tersedia 20/40</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio8" name="mat3" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio8">A | R1  Rabu | 08:00 - 13:00 | Tersedia 20/40</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio9" name="mat3" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio9">A | R1  Rabu | 08:00 - 13:00 | Tersedia 20/40</label>
+                                            </div>
+                                        </div>
+                                    </div>
                             </div>
 
+                           
+
+                            <div class="d-flex align-items-end flex-column bd-highlight mb-3">
+                                <div class="p-2 bd-highlight p-confirm">Apakah kelas yang dipilih sudah benar?</div>
+                                <div class="mt-2 p-2 bd-highlight">
+                                    <button type="reset" class="btn btn-outline-primary btn-sm btn-batal">Batal</button>
+                                    <button type="submit" class="btn btn-primary btn-sm btn-simpan" id="success" style="color: white;">Simpan</button>
+                                    <!-- <button type="submit" class="btn btn-primary btn-sm btn-simpan" id="success" style="color: white;">Simpan</button> -->
+                                </div>
+                            </div>
+                        <!-- </form> -->
                         </div>
                         
                         
@@ -222,12 +232,12 @@
                     <div class="card dns" data-aos="fade-up">
                         <div class="card-header section-title">                           
                             <div class="dns-title">
-                                <p>Informasi Pengambilan Mata Kuliah</p>
+                                <p>Informasi Pemilihan Kelas</p>
                             </div>
                         </div>
                         <div class="card-body d-flex flex-column section-content">
                             <div class="pengumuman">
-                                <p>Aturan pengambilan mata kuliah : 
+                                <p>Aturan pemilihan kelas :
                                     <br>
                                     <br>
                                     1)   silahkan pilih Semua Mata Kuliah yang                  ditawarkan pada semester 1
@@ -238,9 +248,6 @@
                                     <br>
                                     4)   Jika terjadi kesalahan mohon laporkan 
                                     kepada staf prodi
-                                    
-                                    
-                                    
 
                                 </p>
                             </div>
@@ -326,10 +333,10 @@
                 // text: 'Mata kuliah telah disimpan',
                 confirmButtonColor: '#00035E',
                 html:
-                '<p style="font-size: 14px;">Perwalian Anda telah berhasil.</p>', 
+                '<p style="font-size: 14px;">Pemilihan kelas berhasil dilakukan.</p>', 
                 
             }).then(function() {
-                window.location = "pilih_kelas.html";
+                window.location = "dashboard.html";
             }
             );
         });
