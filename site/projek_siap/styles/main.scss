@@ -676,8 +676,97 @@ background: radial-gradient(circle, rgba(235,235,235,0.0760679271708683) 0%, rgb
         }
 
     }
+
+    .card-menu {
+        box-shadow: none;
+        
+    }
+
+
+    ul > li > a {
+        color: #00035E;
+    }
+    .list-group-item.active {
+        background: none !important;
+        border-bottom: 5px solid #00035E !important;
+        color: #00035E;
+        font-weight: bold;
+    }
+
 }
 
+
+.kuri {
+
+    img {
+        width: 80px;
+        margin: auto;
+        left: 0;
+        margin-top: -50px;
+
+    }
+
+    .section-title {
+        background-color: #F99F04;
+
+    }
+
+    h4 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .targeting {
+        
+        h3 {
+            font-size: 24px;
+            font-size: #00035E;
+        }
+
+        p {
+            font-size: 14px;
+            font-size: #00035E;
+        }
+    }
+
+}
+
+.semester {
+
+    .vl {
+        border-left: 6px solid green;
+        height: 500px;
+
+      }
+    p {
+        font-size: 16px;
+    }
+
+    .badge {
+        background-color: #26b286;
+        font-size: 14px;
+        width: 120px;
+    }
+
+    .kuriku {
+        color: #00035E;
+
+        .section-title {
+            background-color: #ffffff;
+            height: 50px;
+
+            p {
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+
+        .section-content {
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+}
 
 footer {
     .copy {
