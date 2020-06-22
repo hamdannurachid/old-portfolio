@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seblak Ubed</title>
+    <link rel="icon" href="images/fav.png" sizes="16x16" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="libraries/animate/animate.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- CSS  -->
+
+    <link rel="stylesheet" href="libraries/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="libraries/owl-carousel/css/owl.theme.default.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+</head>
+<body>
+
+    <!-- Navbar Menu  -->
+    <div class="container">                                 
+    <nav class="navbar row navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand ml-2" href="index.html">
+                <img src="images/logo.png" alt="" srcset="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>                   
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto mr-3 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">PRODUCT</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="track.html">TRACK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-sm my-2 my-sm-0 px-4 btn-order" href="order.html"><img src="images/cart.png" alt="cart" style="max-height: 15px;"> ORDER</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    </div>
+    <!-- Navbar Menu  -->
+
+    <main>
+        <header class="text-center typed-strings">
+            
+            <div class="features row d-flex justify-content-center">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="description mr-2">
+                        <h4>all about</h4>
+                    </div>
+                    <img src="images/icoo.png" alt="" class="features-image">
+                </div>
+            </div>
+            <h1 class="animate__animated animate__fadeInLeft">Seblak</h1>
+            
+            <div id="typed-strings" :loop="true">
+                <p class="mt-3">Juara pedas pool ala <strong>milenial!</strong></p>
+                <p>Semua suka <strong>pedassss!</strong></p>
+                <p>Have a nice day!</p>
+            </div>
+            <span id="typed"></span>
+            <br>
+            <a href="" class="btn btn-md btn-topping px-4 mt-5">TOPPING</a>
+        </header>
+
+
+        <section class="section-brand ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <img src="images/gb-1.png" alt="" class="product-img">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="brand-heading">
+                            <h1>
+                                Kami <span class="coloring">Berbeda</span>
+                            </h1>
+                            <p>Satukan apa yang kamu mau dan pilih pedas sesuai selera</p>
+                        </div>
+
+                        <div class="row benefit px-3">
+                            <div class="col-12 mt-4">
+                                <img src="images/ic_1.png" alt="">
+                                <div class="sub-title">
+                                    <h3>Bebas Pilih Topping</h3>
+                                    <p>Tidak ada batasan, masak apa yang kamu mau.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <img src="images/ic_2.png" alt="">
+                                <div class="sub-title">
+                                    <h3>Level Pedas</h3>
+                                    <p>Pedas biasa atau pedas gila? Buktikan keberanian.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <img src="images/ic_3.png" alt="">
+                                <div class="sub-title">
+                                    <h3>Garansi Masak</h3>
+                                    <p>Pesan dulu lalu ambil kemudian. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="row section-product" id="product">
+            <div class="container">
+                <div class="product-title text-center">
+                    <h1>
+                        Apa saja yang  <span class="coloring">kami punya?</span>
+                    </h1>
+                    <p>Makanan dan cemilan favorit dengan selera milenial.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-product-have">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-sm-6 col-md-3 col-lg-3 text-center mb-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/p-2.png" alt="">
+                            <div class="card-footer">
+                              <h5 class="card-title pt-2">
+                                  <a href="">Pempek</a>
+                              </h5>
+                              <p>Harga mulai Rp.8.000,-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 text-center mb-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/p-1.png" alt="">
+                            <div class="card-footer">
+                              <h5 class="card-title pt-2">
+                                  <a href="detail.html">Seblak</a>
+                              </h5>
+                              <p>Harga mulai Rp.10.000,-</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 text-center mb-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/p-3.png" alt="">
+                            <div class="card-footer">
+                              <h5 class="card-title pt-2">
+                                  <a href="">Tahu Isi</a>
+                              </h5>
+                              <p>Harga mulai Rp.2.000 / 3pcs</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="section-testimoni">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="testimoni-title">
+                            <div class="is-title">
+                                <h1>Testimoni</h1>
+                                <p>Apa kata pelanggan?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-8">
+                        <div class="testimoni-say">
+                            <div class="row">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="profile">
+                                                    <img src="images/ava-1.png" alt="" class="img-ava">
+                                                    <h5 class="card-title mt-2">Sendi</h5>
+                                                </div>
+                                                <div class="comment">
+                                                    <p class="card-text mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, expedita!Enak.... bisa bebas pilih topping, 
+                                                        Next order lagi kak. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="profile">
+                                                    <img src="images/ava-1.png" alt="" class="img-ava">
+                                                    <h5 class="card-title mt-2">
+                                                        Sendi
+                                                    </h5>
+                                                </div>
+                                                <div class="comment">
+                                                    <p class="card-text mt-2">Enak.... bisa bebas pilih topping, 
+                                                        Next order lagi kak. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, suscipit?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="profile">
+                                                    <img src="images/ava-1.png" alt="" class="img-ava">
+                                                    <h5 class="card-title mt-2">
+                                                        Sendi Rian
+                                                    </h5>
+                                                </div>
+                                                <div class="comment">
+                                                    <p class="card-text mt-2">Enak.... adipisicing elit. Minima, suscipit? HAhahahahhh jnk 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="mt-5 mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="footer-title">
+                        <h1>Pesan Antar</h1>
+                    </div>
+                    <br>
+                    <a href="" class="btn btn-call">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        <span>wa.me/seblakubed</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="section-credit mt-4 mb-4">
+        <div class="container">
+            <div class="row text-center px-4">
+                <small>&copy; 2020 - Kang Seblak</small>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libraries/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            dots: false,
+            nav:true,
+            pagination:false,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:2
+                }
+            }
+        })
+    });
+    </script>
+
+<script>
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings', 
+        typeSpeed: 20,
+        startDelay: 1000,
+        backSpeed: 10,
+        backDelay: 1000,
+        
+    });
+</script>
+
+</body>
+</html>
