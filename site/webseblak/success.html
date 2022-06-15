@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seblak Ubed</title>
+    <link rel="icon" href="images/fav.png" sizes="16x16" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="libraries/animate/animate.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- CSS  -->
+
+    <link rel="stylesheet" href="libraries/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="libraries/owl-carousel/css/owl.theme.default.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+    <link rel="stylesheet" href="libraries/xzoom/xzoom.css">
+    <link rel="stylesheet" href="libraries/jquery-select/ui-choose.css">
+
+</head>
+<body>
+
+    <!-- Navbar Menu  -->
+    <div class="container">                                 
+        <nav class="navbar row navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand ml-2" href="index.html">
+                <img src="images/logo.png" alt="" srcset="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>                   
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto mr-3 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">PRODUCT</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="track.html">TRACK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-sm my-2 my-sm-0 px-4 btn-order" href="order.html"><img src="images/cart.png" alt="cart" style="max-height: 15px;"> ORDER</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar Menu  -->
+
+    <main>
+
+        <div class="section-success d-flex align-items-center">
+            <div class="col text-center">
+                <img src="images/ico-success.png" alt="">
+                <h6 class="mt-4">Terima Kasih</h6>
+                <p>Pesanan Anda akan segera di masak.</p>
+                <a href="index.html" class="btn btn-home btn-warning px-4">Home</a>
+
+            </div>
+        </div>
+      
+        
+    </main>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libraries/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <script src="libraries/xzoom/xzoom.min.js"></script>
+    <script src="libraries/jquery-select/ui-choose.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            dots: false,
+            nav:true,
+            pagination:false,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:2
+                }
+            }
+        })
+    });
+</script>
+
+<script>
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings', 
+        typeSpeed: 20,
+        startDelay: 1000,
+        backSpeed: 10,
+        backDelay: 1000,
+        
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+            $('.xzoom, .xzoom-gallery').xzoom({
+                zoomWidth: 450,
+                title: false,
+                titn: '#333',
+                xoffset: 15,
+            });
+        });
+</script>
+<script>
+$('.ui-choose').ui_choose();
+var list_bank = $('#list_bank').data('ui-choose');
+list_bank.click = function(index, item) {
+    console.log('click', index, item.text())
+}
+list_bank.change = function(index, item) {
+    console.log('change', index, item.text())
+}
+
+</script>
+
+
+
+</body>
+</html>
